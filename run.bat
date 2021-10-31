@@ -1,0 +1,1 @@
+.\bin\release\net6.0\publish\trb.exe %1 %2 %3 %4 %5 %6 %7
