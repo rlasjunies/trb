@@ -64,6 +64,20 @@ Display this help screen.
   --version  
 Display version information.
 
+### Run TRB Starting Windows
+
+1. Goes in the folder `C:\Users\<... your user ...> \AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+1. Create a bat file like this one below. ie: `TEAMSRandomizeBAckground.bat`.
+In this bat file:
+    * Change directory to your local repo, 
+    * run the trb with the image source folder expected
+
+As example:
+```dos 
+cd C:\_local\Github\trb
+.\run.bat -s "c:\_local\TEAMS Background"
+```
+
 ## TODO
 
 * [ ] ? Generate thumbnail in the upload folder ?
