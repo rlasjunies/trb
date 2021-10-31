@@ -75,7 +75,7 @@ In this bat file:
 As example:
 ```dos 
 cd C:\_local\Github\trb
-.\run.bat -s "c:\_local\TEAMS Background"
+START /min .\run.bat -s "c:\_local\TEAMS Background"
 ```
 
 ## TODO
