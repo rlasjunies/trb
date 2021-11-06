@@ -1,40 +1,42 @@
 # TEAMS Randomized Background
 
-'TEAMS Randomized Background' (TRB) replaces every hours the background image of TEAMS.
+'TEAMS Randomized Background' (TRB) replaces every hours the background image used in TEAMS video camera.
 
 ## How does it work?
 
-TRB replaces the image named `TEAMSRB.png` in the TEAMS backgrounds folder `%appdata%\Microsoft\Teams\Backgrounds\Uploads` by a random file from the folder name passed as parameter `-s` or current folder `\.` by default.
+TRB replaces the image named `TEAMSRB.png` in the TEAMS backgrounds folder `%appdata%\Microsoft\Teams\Backgrounds\Uploads` by a random image file find in a folder repository of images. 
 
-`TEAMSRB.png` being previously selected as the background image of TEAMS.
+`TEAMSRB.png` being previously selected as the background image of the video camera in TEAMS.
 
-Each time you activate you camera, TEAMS will show the last randomized image, override on the file name `TEAMSRB.png`.
+Each time you activate your camera, TEAMS will show `TEAMSRB.png` who is the latest randomized image overridden.
 
 > Obviously TRB is heavily configurable to fit your environment;folders, file name, duration, filtering ...
 
 ## Get Started
 
-> Read the following the chapter to then end for a perfect understanding (5 min long)
+1. build trb
+1. run trb
+1. configure the background the file name of the 
 
-### Configure your TEAMS
+### Build & Run TRB
 
-1. Run trb  (see below Buil & Run TRB)
-This will create a file `TEAMSRB.png` in the `%appdata%\Microsoft\Teams\Backgrounds\Uploads`
+> TRB requires .net6 framework
+
+use the `*.bat` files proposed to easy these operations:
+* Build the program, type: `.\build.bat`
+* Run the program, type: `.\run.bat -s <your folder with background images>`
+
+### Configure TEAMS: select `TEAMSRB.png` as background image
+
+1. Run trb 
+to create a file `TEAMSRB.png` in the TEAMS background image folder `%appdata%\Microsoft\Teams\Backgrounds\Uploads`
 > Assuming you have images in the folder setted as parameter
 2. Open TEAMS
 1. Start a meeting
 1. Select 'Apply Background Effect', from 'more actions' menu
 1. Found and Select the image just uploaded `TEAMSRB.png`
 
-### Build & Run TRB
-
-> TRB requires .net6 framework
-
-Bat files proposed to easy these operations:
-* Build the program, type: `.\build.bat`
-* Run the program, type: `.\run.bat`
-
-### Configure TRB
+### TRB parameters
 
 If you already have run the program and you may have seen `There is no images in the folder: "." ....`
 
@@ -82,3 +84,5 @@ START /min .\run.bat -s "c:\_local\TEAMS Background"
 
 * [ ] ? Generate thumbnail in the upload folder ?
 * [ ] Support natively bing background folder
+* [ ] run TRB as a service?
+* [ ] run TRB in the systray?
